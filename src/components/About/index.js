@@ -9,11 +9,10 @@ import {
 	TopLine,
 	Heading,
 	SubTitle,
-	BtnWrap,
 	ImgWrap,
 	Img,
 } from "./AboutElements";
-import { Button } from "../BtnElements";
+
 
 const About = ({
 	lightBg,
@@ -24,7 +23,6 @@ const About = ({
 	headline,
 	darkText,
 	description,
-	buttonLabel,
 	img,
 	alt,
 }) => {
@@ -38,9 +36,6 @@ const About = ({
 								<TopLine>{topLine}</TopLine>
 								<Heading lightText={lightText}>{headline}</Heading>
 								<SubTitle darkText={darkText}>{description}</SubTitle>
-								<BtnWrap>
-									<Button to="home">{buttonLabel}</Button>
-								</BtnWrap>
 							</TextWrapper>
 						</Column1>
 						<Column2>

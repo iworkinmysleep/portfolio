@@ -80,10 +80,6 @@ export const SubTitle = styled.p`
 	color: ${({ darkText }) => (darkText ? " #0b0c10" : "#fff ")};
 `;
 
-export const BtnWrap = styled.div ` 
-display: flex;
-justify-content: flex-start;
-`
 
 export const ImgWrap = styled.div ` 
 max-width: 555px;
