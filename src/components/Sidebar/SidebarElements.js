@@ -7,7 +7,7 @@ export const SidebarContainer = styled.aside`
 	z-index: 999;
 	width: 100%;
 	height: 100%;
-	background: gray;
+	background: #1f2833;
 	display: grid;
 	align-items: center;
 	top: 0;
@@ -25,7 +25,7 @@ export const Icon = styled.div`
 	position: absolute;
 	top: 1.2rem;
 	right: 1.5rem;
-	background: transparent;
+	/* background: transparent; */
 	font-size: 2rem;
 	cursor: pointer;
 	outline: none;
@@ -50,15 +50,16 @@ export const SidebarLink = styled(LinkS)`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	text-decoration: none;
 	list-style: none;
 	transition: 0.2s ease-in-out;
-	color: #fff;
+	color: #66fcf1;
 	cursor:pointer;
+	border-bottom: 0.2px dotted #0c0d0e;
 
 	&:hover {
-		color: blue;
+		color: #c5c6c7;
 		transition: 0.2s ease-in-out;
 	}
 `;

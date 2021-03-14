@@ -1,0 +1,16 @@
+export const homeObjOne = {
+	id: "about",
+	lightBg: true,
+	lightText: true,
+	lightTextDesc: true,
+	topLine: "About Me",
+	headline: "some text about me......",
+	description: "some text about desc....",
+	buttonLabel: "Go Home",
+	imgStart: true,
+	img: require("../../images/github-lg.png"),
+	alt: "Man coding",
+	dark: true,
+	primary: true,
+	darkText: false,
+};
