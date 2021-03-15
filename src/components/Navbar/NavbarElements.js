@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
@@ -30,7 +29,7 @@ export const NavbarContainer = styled.div`
 	max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.a`
 	color: #66fcf1;
 	height: 50px;
 	margin-top: 10px;
@@ -87,7 +86,7 @@ export const NavLinks = styled(LinkS)`
 	height: 100%;
 	cursor: pointer;
 
-	&:active {
+	&.active {
 		border-bottom: 3px solid #66fcf1;
 	}
 `;

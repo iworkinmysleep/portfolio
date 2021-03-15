@@ -45,6 +45,7 @@ export const SocLink = styled.a`
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 0.5rem;
+	padding: 10px;
 	transition: all 0.6s ease-in-out;
 
 	&:hover {
@@ -53,8 +54,8 @@ export const SocLink = styled.a`
 		transform: translateY(5px);
 	}
 `;
-export const CopyRight = styled.p`
-	width: 50%;
+export const CopyRight = styled.small`
+	margin-bottom: 16px;
 	text-align: center;
 	color: #45a29e;
 `;
