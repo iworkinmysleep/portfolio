@@ -3,7 +3,9 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Hero from '../components/Hero'
 import About from "../components/About";
-import { homeObjOne } from "../components/About/Data";
+import Projects from '../components/Projects'
+import Footer from '../components/Footer'
+import { homeObjOne, homeObjTwo } from "../components/About/Data";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,6 +20,9 @@ const Home = () => {
 			<Navbar toggle={toggle}/>
 			<Hero/>
 			<About {...homeObjOne}/>
+			<Projects/>
+			<About {...homeObjTwo}/>
+			<Footer/>
 		</>
 	);
 };

@@ -24,13 +24,13 @@ const Navbar = ({ toggle }) => {
 							<NavLinks to="about">About</NavLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks to="about">Projects</NavLinks>
-						</NavItem>
-						<NavItem>
-							<NavLinks to="about">Contact</NavLinks>
+							<NavLinks to="projects">Projects</NavLinks>
 						</NavItem>
 						<NavItem>
 							<NavLinks to="resume">Resume</NavLinks>
+						</NavItem>
+						<NavItem>
+							<NavLinks to="contact">Contact</NavLinks>
 						</NavItem>
 					</NavMenu>
 				</NavbarContainer>

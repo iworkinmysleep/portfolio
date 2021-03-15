@@ -54,7 +54,7 @@ export const HeroContent = styled.div`
 
 export const HeroIntro = styled.p`
 	color: #fff;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	@media screen and (max-width: 768px) {
 		font-size: 40px;
 	}
@@ -63,12 +63,26 @@ export const HeroIntro = styled.p`
 	}
 `;
 export const HeroName = styled.span`
+	display: inline-block;
 	color: #66fcf1;
 	font-size: 3rem;
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-align: center;
 	margin-left: 15px;
+	animation: skew 2s infinite;
+	transform: skew(1deg);
+	animation-direction: alternate;
+	opacity: 0.7;
+
+	@keyframes skew {
+		0% {
+			transform: skew(1deg, 1deg);
+		}
+		100% {
+			transform: skew(-1deg, -1deg)
+		}
+	}
 
 	@media screen and (max-width: 768px) {
 		font-size: 40px;
