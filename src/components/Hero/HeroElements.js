@@ -54,7 +54,7 @@ export const HeroContent = styled.div`
 
 export const HeroIntro = styled.p`
 	color: #fff;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	@media screen and (max-width: 768px) {
 		font-size: 40px;
 	}
@@ -93,7 +93,7 @@ export const HeroName = styled.span`
 `;
 export const HeroP = styled.p`
 	color: #fff;
-	font-size: 40px;
+	font-size: 2rem;
 	text-align: center;
 	font-weight: lighter;
 
