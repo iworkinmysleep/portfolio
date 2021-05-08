@@ -7,7 +7,7 @@ const ResumeWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: calc(100vh - 80px);
 	background-color: #1f2833;
 	overflow: hidden;
 `;

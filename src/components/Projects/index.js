@@ -23,7 +23,7 @@ const Projects = () => {
 					<ProjectsIcon src={puterStuff} />
 					<ProjectsH2>PuterStuff</ProjectsH2>
 					<ProjectsP>
-						Looking for PC parts? Try this full stack eCommerce app built with MERN stack. <br/>{" "}
+						Full stack eCommerce app built with MERN stack. <br/>{" "}
 						<a target="blank" href="https://puterstuff.herokuapp.com/">
 							View Project
 						</a>
