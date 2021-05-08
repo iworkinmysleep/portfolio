@@ -1,24 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import resumeImg from "../../images/resume.jpg";
+import resumePdf from "../../images/resume2021.pdf";
+import Iframe from "react-iframe";
 
 const ResumeWrapper = styled.div`
 	display: flex;
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 	background-color: #1f2833;
-  overflow: hidden;
+	overflow: hidden;
 `;
 
-const ResumeImg = styled.img`
-max-width: 100%;
-max-height: 100%;
-flex-shrink: 0;
-`
 const Resume = () => {
 	return (
 		<ResumeWrapper id="resume">
-			<ResumeImg src={resumeImg} alt="" />
+			<Iframe src={resumePdf} width="100%" height="100%" allow="fullscreen" />
 		</ResumeWrapper>
 	);
 };

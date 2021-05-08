@@ -13,7 +13,6 @@ import {
 	Img,
 } from "./AboutElements";
 
-
 const About = ({
 	lightBg,
 	id,
