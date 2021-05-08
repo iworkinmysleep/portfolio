@@ -4,7 +4,6 @@ import Sidebar from '../components/Sidebar'
 import Hero from '../components/Hero'
 import About from "../components/About";
 import Projects from '../components/Projects'
-import Footer from '../components/Footer'
 import { homeObjOne, homeObjTwo } from "../components/About/Data";
 import Contact from "../components/Contact";
 import Resume from "../components/Resume";
@@ -25,7 +24,6 @@ const Home = () => {
 			<Projects/>
 			<Resume/>
 			<Contact {...homeObjTwo}/>
-			<Footer/>
 		</>
 	);
 };

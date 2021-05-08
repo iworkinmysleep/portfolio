@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer";
 import {
 	ContactContainer,
 	ContactWrapper,
@@ -6,11 +7,11 @@ import {
 	Column1,
 	Column2,
 	TextWrapper,
-  FormWrapper,
+	FormWrapper,
 	ContactForm,
 	ContactLabel,
 	ContactInput,
-  ContactTextArea,
+	ContactTextArea,
 	Heading,
 	SubTitle,
 	ImgWrap,
@@ -23,7 +24,7 @@ const Contact = ({
 	id,
 	imgStart,
 	lightText,
-  buttonLable,
+	buttonLable,
 	headline,
 	darkText,
 	description,
@@ -42,14 +43,19 @@ const Contact = ({
 							</TextWrapper>
 							<FormWrapper>
 								<ContactForm>
-									<ContactLabel htmlFor='name'>Name
-										<ContactInput placeholder='name' type='text'></ContactInput>
+									<ContactLabel htmlFor="name">
+										Name
+										<ContactInput placeholder="name" type="text"></ContactInput>
 									</ContactLabel>
-									<ContactLabel htmlFor='email'>Email
-										<ContactInput placeholder='email' type='email'></ContactInput>
+									<ContactLabel htmlFor="email">
+										Email
+										<ContactInput
+											placeholder="email"
+											type="email"></ContactInput>
 									</ContactLabel>
-									<ContactLabel htmlFor='message'>Message
-										<ContactTextArea placeholder='message'></ContactTextArea>
+									<ContactLabel htmlFor="message">
+										Message
+										<ContactTextArea placeholder="message"></ContactTextArea>
 									</ContactLabel>
 									<Button>submit</Button>
 								</ContactForm>
@@ -62,6 +68,7 @@ const Contact = ({
 						</Column2>
 					</ContactRow>
 				</ContactWrapper>
+				<Footer />
 			</ContactContainer>
 		</>
 	);
