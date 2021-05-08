@@ -15,7 +15,7 @@ const ResumeWrapper = styled.div`
 const Resume = () => {
 	return (
 		<ResumeWrapper id="resume">
-			<Iframe src={resumePdf} width="100%" height="100%" allow="fullscreen" />
+			<Iframe src={resumePdf} />
 		</ResumeWrapper>
 	);
 };
