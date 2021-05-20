@@ -17,8 +17,8 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsH1 = styled.h1`
-	font-size: 2.5rem;
-	color: #f2ecff;
+	font-size: 48px;
+	color: #45a29e;
 	margin-bottom: 64px;
 
 	@media screen and (max-width: 480px) {
@@ -53,12 +53,12 @@ export const ProjectsCard = styled.div`
 	border-radius: 5px;
 	max-height: 340px;
 	padding: 20px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-	transition: all 0.2 ease-in-out;
+	box-shadow: 0 1px 3px rgba(255, 255, 255, 0.2);
+	transition: all 0.3s ease-in;
 
 	&:hover {
-		transform: scale(1.02);
-		transition: all 0.2s ease-in-out;
+		transform: scale(1.01);
+		transition: all 0.3s ease-in;
 	}
 `;
 
@@ -78,6 +78,15 @@ export const ProjectsP = styled.p`
 	text-align: center;
 	margin-bottom: 10px;
 `;
+
+export const ProjectLink = styled.a`
+	text-decoration: none;
+	color: #1f2833;
+
+	&:hover {
+		border-bottom: 1px solid #66fcf1;
+	}
+`
 
 export const ProjectsGitHub = styled.img`
 	display: block;

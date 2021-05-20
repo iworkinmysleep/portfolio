@@ -12,21 +12,22 @@ import {
 	ProjectsP,
 	ProjectsGitHub,
 	GitHubLink,
+	ProjectLink,
 } from "./ProjectsElements";
 
 const Projects = () => {
 	return (
 		<ProjectsContainer id="projects">
-			<ProjectsH1>Some of my work</ProjectsH1>
+			<ProjectsH1>some of my work...</ProjectsH1>
 			<ProjectsWrapper>
 				<ProjectsCard>
 					<ProjectsIcon src={puterStuff} />
 					<ProjectsH2>PuterStuff</ProjectsH2>
 					<ProjectsP>
 						Full stack eCommerce app built with MERN stack. <br/>{" "}
-						<a target="blank" href="https://puterstuff.herokuapp.com/">
+						<ProjectLink target="blank" href="https://puterstuff.herokuapp.com/">
 							View Project
-						</a>
+						</ProjectLink>
 					</ProjectsP>
 					<GitHubLink
 						target="_blank"
