@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const ContactContainer = styled.div`
 	color: #fff;
 	background: ${({ lightBg }) => (lightBg ? " #c5c6c7" : "#0b0c10")};
+	height: calc(100vh - 82px);
 
 	@media screen and (max-width: 768px) {
-		padding: 100px 0;
+		height: 850px;
 	}
 `;
 
@@ -29,7 +30,7 @@ export const ContactRow = styled.div`
 
 	@media screen and (max-width: 768px) {
 		grid-template-areas: ${({ imgStart }) =>
-			imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+			imgStart ? `'col2' 'col1'` : `'col2 col2' 'col1 col1'`};
 	}
 `;
 
@@ -37,7 +38,6 @@ export const Column1 = styled.div`
 	margin-bottom: 15px;
 	padding: 0 15px;
 	grid-area: col1;
- 
 `;
 
 export const Column2 = styled.div`
@@ -50,19 +50,32 @@ export const TextWrapper = styled.div`
 	max-width: 540px;
 	padding-top: 0;
 	padding-bottom: 20px;
-
 `;
 
 export const FormWrapper = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-`
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+`;
+export const FormButton = styled.button`
+	display: block;
+	background: transparent;
+	color: #45a29e;
+	border: 1px solid #45a29e;
+	width: 200px;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
 
+	&:hover {
+			border: 1px solid #66fcf1;
+	}
+`;
 
 export const Heading = styled.h1`
-	margin-bottom: 24px;
+	margin: 24px;
 	font-size: 48px;
 	line-height: 1.1;
 	font-weight: 600;
@@ -81,42 +94,44 @@ export const SubTitle = styled.p`
 	color: ${({ darkText }) => (darkText ? " #fff" : "#000")};
 `;
 
+export const ImgWrap = styled.div`
+	max-width: 555px;
+	height: 100%;
 
-export const ImgWrap = styled.div ` 
-max-width: 555px;
-height: 100%;
-`
+`;
 
-export const Img = styled.img ` 
-width: 100%;
-margin:0 0 10px 0;
-padding-right: 0;
-`
+export const Img = styled.img`
+	width: 100%;
+	margin: 0 0 10px 0;
+	padding-right: 0;
+	
+	
+`;
 
 export const ContactForm = styled.form`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 10px;
-`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+`;
 export const ContactLabel = styled.label`
-display: flex;
-flex-direction: column;
-color: #0b0c10;
-`
+	display: flex;
+	flex-direction: column;
+	color: #0b0c10;
+`;
 export const ContactInput = styled.input`
-width: 300px;
-padding: 5px;
-margin: 0 0 10px 0;
-border: 1px solid #66fcf1;
-border-radius: 5px;
-`
+	width: 300px;
+	padding: 5px;
+	margin: 0 0 10px 0;
+	border: 1px solid #66fcf1;
+	border-radius: 5px;
+`;
 
 export const ContactTextArea = styled.textarea`
-width: 300px;
-padding: 5px;
-margin: 0 0 10px 0;
-border: 1px solid #66fcf1;
-border-radius: 5px;
-`
+	width: 300px;
+	padding: 5px;
+	margin: 0 0 10px 0;
+	border: 1px solid #66fcf1;
+	border-radius: 5px;
+`;

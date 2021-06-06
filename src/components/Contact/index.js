@@ -1,5 +1,6 @@
-import React from "react";
-import Footer from "../Footer";
+import React, { useState } from "react";
+
+
 import {
 	ContactContainer,
 	ContactWrapper,
@@ -8,6 +9,7 @@ import {
 	Column2,
 	TextWrapper,
 	FormWrapper,
+	FormButton,
 	ContactForm,
 	ContactLabel,
 	ContactInput,
@@ -17,20 +19,22 @@ import {
 	ImgWrap,
 	Img,
 } from "./ContactElements";
-import { Button } from "../BtnElements";
 
 const Contact = ({
 	lightBg,
 	id,
 	imgStart,
 	lightText,
-	buttonLable,
 	headline,
 	darkText,
 	description,
 	img,
 	alt,
 }) => {
+	const handleSubmit = (e) => {
+		e.preventDefault();
+	};
+
 	return (
 		<>
 			<ContactContainer lightBg={lightBg} id={id}>
@@ -57,7 +61,7 @@ const Contact = ({
 										Message
 										<ContactTextArea placeholder="message"></ContactTextArea>
 									</ContactLabel>
-									<Button>submit</Button>
+									<FormButton onClick={handleSubmit}>submit</FormButton>
 								</ContactForm>
 							</FormWrapper>
 						</Column1>
@@ -68,7 +72,6 @@ const Contact = ({
 						</Column2>
 					</ContactRow>
 				</ContactWrapper>
-				<Footer />
 			</ContactContainer>
 		</>
 	);

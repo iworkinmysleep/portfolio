@@ -6,7 +6,6 @@ import {
 	SocLinksContainer,
 	SocLinksWrapper,
 	SocLinkItems,
-	SocLinkTitle,
 	SocLink,
 	CopyRight,
 } from "./FooterElements";
@@ -17,7 +16,6 @@ const Footer = () => {
 			<FooterWrap>
 				<SocLinksContainer>
 					<SocLinksWrapper>
-						<SocLinkTitle>Socials</SocLinkTitle>
 						<SocLinkItems>
 							<SocLink
 								href="//www.github.com/iworkinmysleep"

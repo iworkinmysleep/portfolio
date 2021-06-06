@@ -25,7 +25,7 @@ export const SocLinkItems = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 16px;
+	margin: 0 16px;
 	text-align: center;
 	width: 200px;
 	box-sizing: border-box;
@@ -36,10 +36,6 @@ export const SocLinkItems = styled.div`
 		padding: 10px;
 		width: 100%;
 	}
-`;
-export const SocLinkTitle = styled.h1`
-	font-size: 16px;
-	color: #45a29e;
 `;
 export const SocLink = styled.a`
 	color: #fff;
@@ -55,7 +51,7 @@ export const SocLink = styled.a`
 	}
 `;
 export const CopyRight = styled.small`
-	margin-bottom: 16px;
+	margin-bottom: 10px;
 	text-align: center;
 	color: #45a29e;
 `;

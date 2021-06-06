@@ -14,6 +14,6 @@ export const Button = styled(Link)`
 
 	&:hover {
 		letter-spacing: 2px;
-		border: 3px solid #66fcf1;
+		border: 1px solid #66fcf1;
 	}
 `;

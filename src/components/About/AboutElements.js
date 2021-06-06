@@ -3,22 +3,23 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
 	color: #fff;
 	background: ${({ lightBg }) => (lightBg ? " #c5c6c7" : "#0b0c10")};
-
+	height: calc(100vh - 82px);
 	@media screen and (max-width: 768px) {
-		padding: 100px 0;
+		height: 850px;
 	}
 `;
 
 export const AboutWrapper = styled.div`
 	display: grid;
 	z-index: 1;
-	height: 860px;
+	height: 100%;
 	width: 100%;
 	max-width: 1100px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0 24px;
 	justify-content: center;
+	align-items: center;
 `;
 export const AboutRow = styled.div`
 	display: grid;
@@ -29,7 +30,7 @@ export const AboutRow = styled.div`
 
 	@media screen and (max-width: 768px) {
 		grid-template-areas: ${({ imgStart }) =>
-			imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+			imgStart ? `'col2' 'col1'` : `'col2 col2' 'col1 col1'`};
 	}
 `;
 
