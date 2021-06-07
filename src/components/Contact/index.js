@@ -1,5 +1,5 @@
-import React from "react"; 
-
+import React, { useState } from "react";
+import { FaGrin, FaLaughWink } from "react-icons/fa";
 
 import {
 	ContactContainer,
@@ -18,6 +18,7 @@ import {
 	SubTitle,
 	ImgWrap,
 	Img,
+	ThanksText,
 } from "./ContactElements";
 
 const Contact = ({
@@ -31,8 +32,21 @@ const Contact = ({
 	img,
 	alt,
 }) => {
+	const [displayText, setDisplayText] = useState(false);
+	const [info, setInfo] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		setInfo({ name: "", email: "", message: "" });
+		setDisplayText(true);
+	};
+
+	const handleChange = (e) => {
+		setInfo({ ...info, [e.target.name]: e.target.value });
 	};
 
 	return (
@@ -46,24 +60,57 @@ const Contact = ({
 								<SubTitle darkText={darkText}>{description}</SubTitle>
 							</TextWrapper>
 							<FormWrapper>
-								<ContactForm>
+								<ContactForm onSubmit={handleSubmit}>
 									<ContactLabel htmlFor="name">
 										Name
-										<ContactInput placeholder="name" type="text"></ContactInput>
+										<ContactInput
+											placeholder="name"
+											type="text"
+											name="name"
+											value={info.name}
+											onChange={handleChange}></ContactInput>
 									</ContactLabel>
 									<ContactLabel htmlFor="email">
 										Email
 										<ContactInput
 											placeholder="email"
-											type="email"></ContactInput>
+											type="email"
+											name="email"
+											value={info.email}
+											onChange={handleChange}></ContactInput>
 									</ContactLabel>
 									<ContactLabel htmlFor="message">
 										Message
-										<ContactTextArea placeholder="message"></ContactTextArea>
+										<ContactTextArea
+											placeholder="message"
+											name="message"
+											value={info.message}
+											onChange={handleChange}></ContactTextArea>
 									</ContactLabel>
 									<FormButton onClick={handleSubmit}>submit</FormButton>
 								</ContactForm>
 							</FormWrapper>
+							{displayText && (
+								<ThanksText>
+									<FaLaughWink
+										style={{
+											color: "#eef058",
+											background: "#000",
+											borderRadius: "50%",
+										}}
+									/>{" "}
+									Thank you!{" "}
+									<FaGrin
+										style={{
+											color: "#eef058",
+											background: "#000",
+											borderRadius: "50%",
+										}}
+									/>
+									<br />
+									<small>I'll be in touch soon!</small>
+								</ThanksText>
+							)}
 						</Column1>
 						<Column2>
 							<ImgWrap>

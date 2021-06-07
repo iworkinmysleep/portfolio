@@ -135,3 +135,14 @@ export const ContactTextArea = styled.textarea`
 	border: 1px solid #66fcf1;
 	border-radius: 5px;
 `;
+
+export const ThanksText = styled.h2`
+	font-size: 1.5rem;
+	width: 50%;
+	color: #000;
+	margin: 10px auto;
+	padding: 20px;
+	opacity: 0.9;
+	border-radius: 5px;
+	text-align: center;
+`

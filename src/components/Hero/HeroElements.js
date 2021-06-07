@@ -52,9 +52,9 @@ export const HeroContent = styled.div`
 	}
 `;
 
-export const HeroIntro = styled.p`
+export const HeroIntro = styled.h1`
 	color: #fff;
-	font-size: 2rem;
+	font-size: 3rem;
 	@media screen and (max-width: 768px) {
 		font-size: 40px;
 	}
@@ -65,7 +65,7 @@ export const HeroIntro = styled.p`
 export const HeroName = styled.span`
 	display: inline-block;
 	color: #66fcf1;
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-align: center;
@@ -93,9 +93,8 @@ export const HeroName = styled.span`
 `;
 export const HeroP = styled.p`
 	color: #fff;
-	font-size: 2rem;
+	font-size: 3rem;
 	text-align: center;
-	font-weight: lighter;
 
 	@media screen and (max-width: 768px) {
 		font-size: 20px;

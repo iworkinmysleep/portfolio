@@ -1,7 +1,7 @@
 import React from "react";
 import howTo from "../../images/howTo.png";
-import puterStuff from "../../images/puterstuff.png";
-import telenet from "../../images/telenet-data.png";
+import puterStuff from "../../images/puterstuff2.png";
+import telenet from "../../images/telenet-data2.png";
 import gitHubSmall from "../../images/github-sm.png";
 import {
 	ProjectsContainer,
