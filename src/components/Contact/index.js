@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import { FaGrin, FaLaughWink } from "react-icons/fa";
 
 import {
@@ -33,21 +34,34 @@ const Contact = ({
 	alt,
 }) => {
 	const [displayText, setDisplayText] = useState(false);
-	const [info, setInfo] = useState({
-		name: "",
-		email: "",
-		message: "",
-	});
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		setInfo({ name: "", email: "", message: "" });
+		emailjs
+			.sendForm(
+				"emmysdad71213@gmail.com",
+				"template_7ifbl46",
+				e.target,
+				"user_s2ctR0D7OD87gRYp6gtJv"
+			)
+			.then((res) => {
+				console.log(res);
+			})
+			.catch((err) => console.log(err));
+
+		setName("");
+		setEmail("");
+		setMessage("");
+
 		setDisplayText(true);
 	};
 
-	const handleChange = (e) => {
-		setInfo({ ...info, [e.target.name]: e.target.value });
-	};
+	// const handleChange = (e) => {
+	// 	setInfo({ ...info, [e.target.name]: e.target.value });
+	// };
 
 	return (
 		<>
@@ -67,8 +81,8 @@ const Contact = ({
 											placeholder="name"
 											type="text"
 											name="name"
-											value={info.name}
-											onChange={handleChange}></ContactInput>
+											value={name}
+											onChange={(e) => setName(e.target.value)}></ContactInput>
 									</ContactLabel>
 									<ContactLabel htmlFor="email">
 										Email
@@ -76,18 +90,20 @@ const Contact = ({
 											placeholder="email"
 											type="email"
 											name="email"
-											value={info.email}
-											onChange={handleChange}></ContactInput>
+											value={email}
+											onChange={(e) => setEmail(e.target.value)}></ContactInput>
 									</ContactLabel>
 									<ContactLabel htmlFor="message">
 										Message
 										<ContactTextArea
 											placeholder="message"
 											name="message"
-											value={info.message}
-											onChange={handleChange}></ContactTextArea>
+											value={message}
+											onChange={(e) =>
+												setMessage(e.target.value)
+											}></ContactTextArea>
 									</ContactLabel>
-									<FormButton onClick={handleSubmit}>submit</FormButton>
+									<FormButton type="submit">submit</FormButton>
 								</ContactForm>
 							</FormWrapper>
 							{displayText && (

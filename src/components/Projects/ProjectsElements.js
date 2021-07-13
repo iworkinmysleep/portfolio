@@ -79,14 +79,25 @@ export const ProjectsP = styled.p`
 	font-size: 1rem;
 	text-align: center;
 	margin-bottom: 10px;
+	border-bottom: 1px solid #45a29e;
 	@media (max-width: 480px) {
 		font-size: .8rem;
 	}
 `;
 
+export const LinksContainer = styled.div`
+width: 80%;
+display: flex;
+justify-content: space-between;
+`
+
 export const ProjectLink = styled.a`
 	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
 	color: #1f2833;
+	display: inline-block;
 
 	&:hover {
 		border-bottom: 1px solid #66fcf1;
