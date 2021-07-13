@@ -25,12 +25,13 @@ const Projects = () => {
 					<ProjectsIcon src={puterStuff} />
 					<ProjectsH2>PuterStuff</ProjectsH2>
 					<ProjectsP>
-						Full stack eCommerce app built with MERN stack. User auth using JWT.  Admin users have crud functionality with products and users.<br />{" "}
+						Full stack eCommerce app built with MERN stack. User auth using JWT.  Admin users have crud functionality with products and users.<hr />{" "}
 						<ProjectLink
 							target="blank"
 							href="https://puterstuff.herokuapp.com/">
 							View Project
 						</ProjectLink>
+						<hr />
 					</ProjectsP>
 					<GitHubLink
 						target="_blank"
@@ -41,10 +42,13 @@ const Projects = () => {
 				<ProjectsCard>
 					<ProjectsIcon src={howTo} />
 					<ProjectsH2>How-To</ProjectsH2>
+				
 					<ProjectsP>
 						A simple app that allows users to view, add, update, and delete life
 						hacks. (back end developer) Node, Express, Knex, SQLite
+						<hr />
 					</ProjectsP>
+				
 					<GitHubLink
 						target="_blank"
 						href="https://github.com/Build-Week-LS-How-To/back-end">
@@ -55,12 +59,15 @@ const Projects = () => {
 					<ProjectsIcon src={telenet} />
 					<ProjectsH2>Telenet-Data</ProjectsH2>
 					<ProjectsP>
-						I built this small app to help solve a problem for a telecom company that needed to keep inventory notes. React, Node, Express, MongoDB Bootstrap <br />
+						I built this small app to help solve a problem for a telecom company that needed to keep inventory notes. 
+						React, Node, Express, MongoDB Bootstrap <br />
+						<hr />
 						<ProjectLink
 							target="blank"
 							href="https://telenet-data.herokuapp.com/">
 							View Project
 						</ProjectLink>
+						<hr />
 					</ProjectsP>
 					<GitHubLink
 						target="_blank"

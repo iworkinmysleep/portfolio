@@ -31,7 +31,7 @@ export const ProjectsWrapper = styled.div`
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	align-items: center;
+	align-items: flex-end;
 	grid-gap: 16px;
 	padding: 0 50px;
 
@@ -45,16 +45,16 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const ProjectsCard = styled.div`
-	background: #c5c6c7;
+	background: #e0e0e0;
 	color: #1f2833;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	border-radius: 5px;
-	max-height: 340px;
+	max-height: auto;
 	padding: 20px;
-	box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.9);
 	transition: all 0.3s ease-in;
 
 	&:hover {
